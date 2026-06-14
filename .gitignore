@@ -1,0 +1,6 @@
+node_modules/
+dist/
+dist-check/
+*.log
+*-check.png
+public/* - Copy.png

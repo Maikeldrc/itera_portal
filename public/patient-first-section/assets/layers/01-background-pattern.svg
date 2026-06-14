@@ -1,0 +1,41 @@
+<svg width="1672" height="941" viewBox="0 0 1672 941" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1672" height="941" fill="url(#base)"/>
+  <rect width="1672" height="941" fill="url(#glowTop)" opacity="0.85"/>
+  <rect width="1672" height="941" fill="url(#glowPatient)" opacity="0.75"/>
+  <g opacity="0.42" stroke="#1B98E0" stroke-width="1.25" fill="none">
+    <path d="M-40 720 C180 590 310 620 510 690 C735 770 868 710 1030 595 C1210 468 1390 430 1720 530"/>
+    <path d="M-30 790 C200 665 365 685 590 750 C780 805 985 760 1198 634 C1388 522 1515 495 1720 584" opacity="0.55"/>
+    <path d="M-30 85 C190 160 365 90 560 82 C755 74 910 148 1080 155 C1290 164 1440 45 1710 82" opacity="0.35"/>
+    <path d="M-20 125 C155 165 270 150 430 125 C620 95 720 128 875 160 C1045 195 1190 185 1355 115 C1495 58 1600 70 1710 130" opacity="0.25"/>
+  </g>
+  <g opacity="0.28" stroke="#004E89" stroke-width="1" fill="none">
+    <path d="M1040 60 L1130 100 L1210 44 L1342 124 L1450 88 L1620 162"/>
+    <circle cx="1040" cy="60" r="4" fill="#1B98E0" stroke="none"/>
+    <circle cx="1130" cy="100" r="5" fill="#fff"/>
+    <circle cx="1210" cy="44" r="4" fill="#1B98E0" stroke="none"/>
+    <circle cx="1342" cy="124" r="5" fill="#fff"/>
+    <circle cx="1450" cy="88" r="4" fill="#1B98E0" stroke="none"/>
+    <circle cx="1620" cy="162" r="5" fill="#fff"/>
+  </g>
+  <g opacity="0.18" fill="#1B98E0">
+    <circle cx="85" cy="845" r="3"/><circle cx="105" cy="840" r="3"/><circle cx="125" cy="835" r="3"/><circle cx="145" cy="829" r="3"/><circle cx="165" cy="822" r="3"/><circle cx="185" cy="815" r="3"/>
+    <circle cx="78" cy="875" r="3"/><circle cx="100" cy="870" r="3"/><circle cx="122" cy="865" r="3"/><circle cx="144" cy="858" r="3"/><circle cx="166" cy="850" r="3"/><circle cx="188" cy="842" r="3"/>
+    <circle cx="1515" cy="812" r="3"/><circle cx="1538" cy="817" r="3"/><circle cx="1561" cy="823" r="3"/><circle cx="1584" cy="830" r="3"/><circle cx="1607" cy="838" r="3"/><circle cx="1630" cy="848" r="3"/>
+    <circle cx="1498" cy="845" r="3"/><circle cx="1522" cy="851" r="3"/><circle cx="1546" cy="858" r="3"/><circle cx="1570" cy="866" r="3"/><circle cx="1594" cy="875" r="3"/><circle cx="1618" cy="885" r="3"/>
+  </g>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1672" y2="941" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.48" stop-color="#F5FAFF"/>
+      <stop offset="1" stop-color="#EAF5FF"/>
+    </linearGradient>
+    <radialGradient id="glowTop" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 270) rotate(90) scale(560 820)">
+      <stop stop-color="#BFE3FF" stop-opacity="0.62"/>
+      <stop offset="0.58" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPatient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(315 560) rotate(90) scale(440 520)">
+      <stop stop-color="#DDF2FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
