@@ -10,7 +10,7 @@ const columns = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-primary/10 bg-white/50 px-6 pb-10 pt-10 lg:px-12" data-header-bg="#ffffff" id="contact">
+    <footer className="border-t border-primary/10 bg-soft px-6 pb-10 pt-10 lg:px-12" data-header-bg="#e8f1f2" id="contact">
       <div className="mx-auto grid max-w-[1320px] gap-10 lg:grid-cols-[1.25fr_2fr_1fr]">
         <div>
           <Logo />

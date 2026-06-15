@@ -55,14 +55,14 @@ const platformPillars = [
 
 export function BrickLInfrastructureSection() {
   return (
-    <section className="brickl-platform-section relative overflow-hidden bg-[#eef7fc]" data-header-bg="#eef7fc" id="brickl">
+    <section className="brickl-platform-section relative overflow-hidden bg-soft" data-header-bg="#e8f1f2" id="brickl">
       <img
         alt="BrickL care orchestration platform background with care plan, clinical apps, operational command center, and connected healthcare workflows."
         className="brickl-platform-bg absolute"
         src="/BrickL_Platform.png"
       />
       <div className="brickl-platform-readability absolute inset-0" />
-      <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-[#eef7fc] via-[#eef7fc]/72 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-soft via-soft/72 to-transparent" />
 
       <div className="brickl-platform-content relative z-10 mx-auto flex max-w-[1680px] flex-col px-6 pb-8 pt-20 sm:px-10 lg:px-16 lg:pt-24 xl:px-[64px]">
         <div className="brickl-platform-copy max-w-[590px]">

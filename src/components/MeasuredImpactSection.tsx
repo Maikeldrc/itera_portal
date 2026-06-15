@@ -132,7 +132,7 @@ export function MeasuredImpactSection() {
   return (
     <section
       className={`impact-section ${isActive ? "impact-section-active" : ""}`}
-      data-header-bg="#f8fcff"
+      data-header-bg="#e8f1f2"
       ref={sectionRef}
       aria-labelledby="impact-title"
     >

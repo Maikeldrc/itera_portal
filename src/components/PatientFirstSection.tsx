@@ -75,7 +75,7 @@ type PatientFirstSectionProps = {
 
 export function PatientFirstSection({ content = patientFirstSectionContent }: PatientFirstSectionProps) {
   return (
-    <section className="patient-first-section" data-header-bg="#f8fbff" id="for-patients" aria-labelledby="patient-first-title">
+    <section className="patient-first-section" data-header-bg="#e8f1f2" id="for-patients" aria-labelledby="patient-first-title">
       <div className="patient-first-section__bg" aria-hidden="true" />
 
       <div className="patient-first-section__header">
@@ -100,7 +100,6 @@ export function PatientFirstSection({ content = patientFirstSectionContent }: Pa
         </div>
 
         <div className="patient-first-section__cards-wrap">
-          <img className="patient-first-section__connectors" src={`${assetBase}/layers/04-connector-lines.svg`} alt="" aria-hidden="true" />
           <div className="patient-first-section__cards">
             {content.cards.map((card) => (
               <article className={`patient-card patient-card--${card.accent}`} key={card.title}>

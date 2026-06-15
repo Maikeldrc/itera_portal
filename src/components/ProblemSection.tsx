@@ -48,7 +48,7 @@ const accentStyles = {
 
 export function ProblemSection() {
   return (
-    <section className="px-6 py-5 lg:px-12" data-header-bg="#dfeef8" id="for-providers">
+    <section className="px-6 py-5 lg:px-12" data-header-bg="#e8f1f2" id="for-providers">
       <div className="relative mx-auto grid max-w-[1320px] grid-cols-1 items-center gap-10 overflow-hidden rounded-[34px] border border-primary/10 bg-[linear-gradient(135deg,rgba(239,248,255,0.96),rgba(219,236,250,0.94))] p-6 shadow-[0_24px_80px_rgba(0,43,92,0.1)] lg:grid-cols-[0.95fr_1fr] lg:gap-16 lg:p-12">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_23%_50%,rgba(255,255,255,0.9),rgba(255,255,255,0)_32%),radial-gradient(circle_at_80%_16%,rgba(27,152,224,0.14),rgba(27,152,224,0)_42%)]" />
 
@@ -72,7 +72,7 @@ export function ProblemSection() {
               src="/care-manager.png"
               alt="Care manager reviewing patient signals on a tablet"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(223,238,248,0)_66%,rgba(223,238,248,0.78)_100%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(232,241,242,0)_66%,rgba(232,241,242,0.78)_100%)]" />
           </div>
 
           <div className="absolute left-0 top-6 flex w-[230px] flex-col gap-7 max-sm:left-2 max-sm:top-5 max-sm:w-[180px]">

@@ -20,7 +20,7 @@ export function Hero() {
         <div className="hero-copy-card">
           <h1>
             <span className="hero-headline-line">One patient. One plan.</span>
-            <span className="hero-headline-line">Every team connected<span className="text-orange">.</span></span>
+            <span className="hero-headline-line">Every team, connected<span className="text-orange">.</span></span>
           </h1>
           <p className="hero-copy-text">
             BrickL turns clinical signals, patient communication, care team operations, and FHIR-native workflows into

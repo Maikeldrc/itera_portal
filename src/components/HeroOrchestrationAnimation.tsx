@@ -76,12 +76,6 @@ export function HeroOrchestrationAnimation({ className = "" }: HeroOrchestration
     <div className={`hero-orchestration-animation ${className}`} aria-hidden="true">
       <div className="hero-animation-frame">
         <img
-          className="hero-animation-image hero-animation-start"
-          src="/images/hero/itera-hero-architecture.webp"
-          alt=""
-          loading="eager"
-        />
-        <img
           className="hero-animation-image hero-animation-end"
           src="/images/hero/itera-hero-final.webp"
           alt=""
@@ -226,8 +220,6 @@ export function HeroOrchestrationAnimation({ className = "" }: HeroOrchestration
         </svg>
 
         <div className="hero-animation-white-field" />
-        <div className="hero-animation-transition-wash" />
-        <div className="hero-animation-light-sweep" />
       </div>
     </div>
   );
