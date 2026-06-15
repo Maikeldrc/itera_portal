@@ -23,40 +23,6 @@ const bullets = [
   },
 ];
 
-const cards = [
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-        <circle cx="18" cy="18" r="7" stroke="currentColor" strokeWidth="2.5" />
-        <circle cx="32" cy="20" r="6" opacity="0.7" stroke="currentColor" strokeWidth="2.5" />
-        <path d="M5 40c2-8 6.8-12 13-12s11 4 13 12" stroke="currentColor" strokeLinecap="round" strokeWidth="2.5" />
-        <path d="M27 31c5.2.6 8.8 3.7 10.5 9" opacity="0.7" stroke="currentColor" strokeLinecap="round" strokeWidth="2.5" />
-      </svg>
-    ),
-    title: "See real patient impact",
-    text: "Bring your own cohort and measure. We'll run it live.",
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-        <path d="M8 36 L20 22 L29 30 L40 14" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M34 14h6v6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: "Connect the dots",
-    text: "See how care, signals, and outcomes come together.",
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-        <circle cx="24" cy="24" r="16" stroke="currentColor" strokeWidth="2.5" />
-        <path d="M24 14v10l6 4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: "30 minutes to clarity",
-    text: "A focused session with our outcomes team.",
-  },
-];
 
 export function BookMeetingSection() {
   return (
@@ -234,20 +200,7 @@ export function BookMeetingSection() {
         </div>
       </div>
 
-      {/* Bottom feature cards */}
-      <div className="bms__cards-row">
-        {cards.map((c) => (
-          <div key={c.title} className="bms__card">
-            <span className="bms__card-icon" aria-hidden="true">
-              {c.icon}
-            </span>
-            <div>
-              <h4 className="bms__card-title">{c.title}</h4>
-              <p className="bms__card-text">{c.text}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+
     </section>
   );
 }
