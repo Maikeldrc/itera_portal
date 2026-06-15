@@ -1,6 +1,7 @@
 export function FinalCTA() {
   return (
-    <section className="mx-auto max-w-[1320px] px-6 py-5 lg:px-12" data-header-bg="#e8f1f2" id="cta">
+    <section className="post-section-compact" data-header-bg="#f6fbfd" id="cta">
+      <div className="post-container">
       <div className="relative overflow-hidden rounded-2xl bg-[linear-gradient(135deg,#002b5c,#001d5d_58%,#003366)] px-8 py-7 text-white shadow-[0_24px_54px_rgba(0,43,92,0.18)]">
         <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle,rgba(255,255,255,0.55)_1px,transparent_1.5px)] [background-size:22px_22px]" />
         <div className="relative flex flex-col items-center justify-between gap-6 lg:flex-row">
@@ -16,6 +17,7 @@ export function FinalCTA() {
             </a>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

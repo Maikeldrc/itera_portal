@@ -50,8 +50,8 @@ const accentStyles = {
 
 export function FoundationValueBasedCareSection() {
   return (
-    <section className="px-6 py-5 lg:px-12" data-header-bg="#e8f1f2">
-      <div className="mx-auto grid max-w-[1320px] grid-cols-1 gap-10 rounded-[34px] border border-primary/10 bg-white/72 p-8 shadow-[0_24px_80px_rgba(0,43,92,0.09)] backdrop-blur-xl lg:grid-cols-[0.85fr_1.75fr] lg:items-center lg:p-12">
+    <section className="post-section-compact" data-header-bg="#f6fbfd">
+      <div className="post-container grid grid-cols-1 gap-10 rounded-[var(--itera-card-radius)] border border-[var(--itera-card-border)] bg-[var(--itera-card-bg)] p-8 shadow-[var(--itera-card-shadow)] backdrop-blur-xl lg:grid-cols-[0.85fr_1.75fr] lg:items-center lg:p-12">
         <div className="max-w-[420px]">
           <p className="font-body text-[12px] font-extrabold uppercase leading-[18px] tracking-[0.22em] text-primary">
             ACCESS Care Orchestration
@@ -69,14 +69,14 @@ export function FoundationValueBasedCareSection() {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-[var(--itera-grid-gap)] md:grid-cols-3">
           {foundationSteps.map((step, index) => {
             const styles = accentStyles[step.accent];
             const Icon = step.Icon;
 
             return (
               <article
-                className={`relative min-h-[350px] rounded-2xl border border-primary/10 border-b-[5px] ${styles.border} bg-white/76 px-8 pb-8 pt-9 text-center shadow-[0_22px_58px_rgba(0,78,137,0.1)] backdrop-blur-xl`}
+                className={`relative min-h-[320px] rounded-[var(--itera-card-radius)] border border-[var(--itera-card-border)] border-b-[5px] ${styles.border} bg-white/76 px-8 pb-8 pt-9 text-center shadow-[var(--itera-card-shadow)] backdrop-blur-xl`}
                 key={step.title}
               >
                 {index < foundationSteps.length - 1 && (

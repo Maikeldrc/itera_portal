@@ -10,7 +10,7 @@ const navItems = [
   { label: "About", href: "#brickl" },
   { label: "Resources", href: "#contact" },
 ];
-const scrolledHeaderBackground = "rgba(232, 241, 242, 0.78)";
+const scrolledHeaderBackground = "rgba(246, 251, 253, 0.82)";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

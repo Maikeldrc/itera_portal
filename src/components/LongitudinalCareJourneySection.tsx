@@ -34,8 +34,8 @@ const journeyCards = [
 
 export function LongitudinalCareJourneySection() {
   return (
-    <section className="longitudinal-journey-section relative isolate overflow-hidden bg-transparent px-6 py-16 lg:px-12" data-header-bg="#f6fbfd">
-      <div className="mx-auto max-w-[1320px]">
+    <section className="longitudinal-journey-section post-section relative isolate overflow-hidden bg-transparent" data-header-bg="#f6fbfd">
+      <div className="post-container">
         <div className="grid grid-cols-1 items-center gap-9 lg:grid-cols-[minmax(0,0.9fr)_minmax(560px,1.1fr)] lg:gap-14">
           <div className="relative z-10">
             <p className="eyebrow mb-7 inline-flex max-w-full whitespace-normal rounded-full border border-[#3657d8]/70 bg-white/65 px-6 py-3 text-[#3657d8] shadow-sm">
@@ -83,11 +83,11 @@ export function LongitudinalCareJourneySection() {
           </div>
 
           <div className="relative min-w-0">
-            <div className="relative ml-auto overflow-hidden rounded-[28px] border border-primary/10 bg-white/40 shadow-[0_28px_80px_rgba(0,43,92,0.12)]">
+            <div className="longitudinal-visual-wrap">
               <video
                 aria-label="Animated healthcare technology care orchestration visual"
                 autoPlay
-                className="hero-composite-photo relative block aspect-[1.47/1] h-auto w-full object-cover"
+                className="longitudinal-video"
                 loop
                 muted
                 onCanPlay={(event) => {
@@ -100,17 +100,15 @@ export function LongitudinalCareJourneySection() {
               >
                 <source src="/hero-healthcare-technology.mp4" type="video/mp4" />
               </video>
-              <div className="pointer-events-none absolute inset-y-0 left-0 w-5 bg-gradient-to-r from-soft/70 to-transparent" />
-              <div className="pointer-events-none absolute inset-y-0 right-0 w-5 bg-gradient-to-l from-soft/25 to-transparent" />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-5 bg-gradient-to-t from-soft/50 to-transparent" />
             </div>
           </div>
+
         </div>
 
-        <div className="mt-11 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-11 grid gap-[var(--itera-grid-gap)] sm:grid-cols-2 lg:grid-cols-4">
           {journeyCards.map(({ title, text, Icon }) => (
             <article
-              className="grid min-h-[126px] grid-cols-[78px_1fr] items-center overflow-hidden rounded-2xl border border-primary/10 bg-white/86 p-5 shadow-[0_18px_44px_rgba(0,43,92,0.08)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:border-primary/20 hover:bg-white"
+              className="grid min-h-[126px] grid-cols-[78px_1fr] items-center overflow-hidden rounded-[var(--itera-card-radius)] border border-[var(--itera-card-border)] bg-[var(--itera-card-bg)] p-5 shadow-[var(--itera-card-shadow)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:border-primary/20 hover:bg-white"
               key={title}
             >
               <div className="grid h-[68px] w-[68px] place-items-center rounded-full bg-primary/8 text-primary">

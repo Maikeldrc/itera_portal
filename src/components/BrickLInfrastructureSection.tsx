@@ -80,16 +80,16 @@ export function BrickLInfrastructureSection() {
 
             <div className="brickl-platform-actions mt-9">
               <a
-                className="inline-flex h-14 items-center justify-center gap-3 rounded-[0.8rem] bg-primary px-8 font-body text-[16px] font-bold tracking-[-0.01em] text-white shadow-[0_18px_38px_rgba(27,152,224,0.28)] transition hover:-translate-y-0.5 hover:bg-deep"
+                className="inline-flex h-14 items-center justify-center rounded-[0.8rem] bg-primary px-8 font-body text-[16px] font-bold tracking-[-0.01em] text-white shadow-[0_18px_38px_rgba(27,152,224,0.28)] transition hover:-translate-y-0.5 hover:bg-deep"
                 href="#top"
               >
-                Book a demo <ArrowRight size={18} aria-hidden="true" />
+                Book a demo
               </a>
               <a
-                className="inline-flex h-14 items-center justify-center gap-3 rounded-[0.8rem] border border-primary bg-white/60 px-8 font-body text-[16px] font-bold tracking-[-0.01em] text-primary shadow-[0_16px_34px_rgba(0,43,92,0.08)] backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
+                className="inline-flex h-14 items-center justify-center rounded-[0.8rem] border border-primary bg-white/60 px-8 font-body text-[16px] font-bold tracking-[-0.01em] text-primary shadow-[0_16px_34px_rgba(0,43,92,0.08)] backdrop-blur transition hover:-translate-y-0.5 hover:bg-white"
                 href="#solutions"
               >
-                Explore the platform <ArrowRight size={18} aria-hidden="true" />
+                Explore the platform
               </a>
             </div>
           </div>

@@ -49,51 +49,53 @@ export default function CareStakeholdersSection() {
 
       <NetworkLayer />
 
-      <div className={styles.header}>
-        <div className={styles.eyebrow}>
-          <EyebrowIcon />
-          Who it&apos;s for
+      <div className="post-container">
+        <div className={styles.header}>
+          <div className={styles.eyebrow}>
+            <EyebrowIcon />
+            Who it&apos;s for
+          </div>
+
+          <h2 className={styles.title} id="care-stakeholders-title">
+            Built for <span>Every</span> Care Stakeholder
+          </h2>
+
+          <p className={styles.subtitle}>
+            Role-based experiences for the organizations, teams, and people who drive
+            continuous, coordinated care.
+          </p>
         </div>
 
-        <h2 className={styles.title} id="care-stakeholders-title">
-          Built for <span>Every</span> Care Stakeholder
-        </h2>
+        <div className={styles.grid} aria-label="Care stakeholder groups">
+          {stakeholders.map((item) => (
+            <article
+              key={item.title}
+              className={[
+                styles.card,
+                styles[item.variant],
+                item.recommended ? styles.recommended : "",
+              ].join(" ")}
+            >
+              {item.recommended && (
+                <div className={styles.recommendedBadge}>
+                  <StarIcon />
+                  Recommended
+                </div>
+              )}
 
-        <p className={styles.subtitle}>
-          Role-based experiences for the organizations, teams, and people who drive
-          continuous, coordinated care.
-        </p>
-      </div>
-
-      <div className={styles.grid} aria-label="Care stakeholder groups">
-        {stakeholders.map((item) => (
-          <article
-            key={item.title}
-            className={[
-              styles.card,
-              styles[item.variant],
-              item.recommended ? styles.recommended : "",
-            ].join(" ")}
-          >
-            {item.recommended && (
-              <div className={styles.recommendedBadge}>
-                <StarIcon />
-                Recommended
+              <div className={styles.iconShell} aria-hidden="true">
+                <StakeholderIcon type={item.icon} />
               </div>
-            )}
 
-            <div className={styles.iconShell} aria-hidden="true">
-              <StakeholderIcon type={item.icon} />
-            </div>
+              <h3 className={styles.cardTitle}>{item.title}</h3>
+              <p className={styles.cardText}>{item.description}</p>
 
-            <h3 className={styles.cardTitle}>{item.title}</h3>
-            <p className={styles.cardText}>{item.description}</p>
-
-            <a className={styles.learnLink} href="#">
-              Learn more <span>→</span>
-            </a>
-          </article>
-        ))}
+              <a className={styles.learnLink} href="#">
+                Learn more <span>→</span>
+              </a>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

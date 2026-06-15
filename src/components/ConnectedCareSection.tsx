@@ -88,15 +88,17 @@ export function ConnectedCareSection() {
             </p>
             <div className="connected-care-actions">
               <a className="connected-care-button connected-care-button-primary" href="#top">
-                Book a demo <span aria-hidden="true">→</span>
+                Book a demo
               </a>
               <a className="connected-care-button connected-care-button-secondary" href="#solutions">
-                Explore the platform <span aria-hidden="true">→</span>
+                Explore the platform
               </a>
             </div>
           </div>
 
-          <CarePlanDiagram />
+          <div className="connected-care-diagram-outer">
+            <CarePlanDiagram />
+          </div>
         </div>
 
         <div className="connected-care-features" aria-label="BrickL platform capabilities">

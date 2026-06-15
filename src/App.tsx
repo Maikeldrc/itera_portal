@@ -1,4 +1,4 @@
-import { AcoAccessSection } from "./components/AcoAccessSection";
+import { BookMeetingSection } from "./components/BookMeetingSection";
 import { BetweenVisitsAnimatedSection } from "./components/BetweenVisitsAnimatedSection";
 import CareStakeholdersSection from "./components/CareStakeholdersSection";
 import { ConnectedCareSection } from "./components/ConnectedCareSection";
@@ -10,7 +10,7 @@ import { Hero } from "./components/Hero";
 import { LongitudinalCareJourneySection } from "./components/LongitudinalCareJourneySection";
 import { MeasuredImpactSection } from "./components/MeasuredImpactSection";
 import { PatientFirstSection } from "./components/PatientFirstSection";
-import { SolutionsSection } from "./components/SolutionsSection";
+
 import { TrustBar } from "./components/TrustBar";
 
 export default function App() {
@@ -24,15 +24,15 @@ export default function App() {
           <BetweenVisitsAnimatedSection />
           <LongitudinalCareJourneySection />
           <ConnectedCareSection />
-          <SolutionsSection />
+
           <CareStakeholdersSection />
           <PatientFirstSection />
           <FoundationValueBasedCareSection />
-          <AcoAccessSection />
           <MeasuredImpactSection />
           <FinalCTA />
         </div>
       </main>
+      <BookMeetingSection />
       <Footer />
     </div>
   );

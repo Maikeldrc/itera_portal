@@ -14,7 +14,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding: 34px 24px 34px;
+  padding: var(--itera-section-y) var(--itera-page-x);
   background: transparent;
   color: var(--cc-navy);
   isolation: isolate;
@@ -37,14 +37,14 @@
 
 .connected-care-wrap {
   position: relative;
-  width: min(100%, 1760px);
+  width: min(100%, var(--itera-container));
   margin: 0 auto;
 }
 
 .connected-care-hero {
   display: grid;
-  grid-template-columns: minmax(420px, 620px) minmax(720px, 1fr);
-  gap: clamp(28px, 4vw, 76px);
+  grid-template-columns: minmax(360px, 0.9fr) minmax(640px, 1.1fr);
+  gap: clamp(28px, 4vw, 60px);
   align-items: start;
 }
 
@@ -57,10 +57,10 @@
   margin: 0;
   color: var(--cc-navy);
   font-family: Manrope, system-ui, sans-serif;
-  font-size: clamp(54px, 4.4vw, 82px);
+  font-size: clamp(36px, 3.5vw, 54px);
   font-weight: 800;
-  line-height: 0.96;
-  letter-spacing: -0.055em;
+  line-height: 1.04;
+  letter-spacing: -0.045em;
 }
 
 .connected-care-title span {
@@ -84,8 +84,8 @@
   margin: 28px 0 30px;
   color: #396ca7;
   font-family: Inter, system-ui, sans-serif;
-  font-size: 17px;
-  line-height: 1.8;
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.68;
   letter-spacing: -0.01em;
 }
 
@@ -97,14 +97,14 @@
 
 .connected-care-button {
   display: inline-flex;
-  min-height: 56px;
+  min-height: 52px;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  border-radius: 18px;
+  border-radius: 999px;
   padding: 0 28px;
   font-family: Inter, system-ui, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
   text-decoration: none;
   transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
@@ -127,11 +127,54 @@
   box-shadow: 0 12px 26px rgba(13, 36, 93, 0.05);
 }
 
+.connected-care-diagram-outer {
+  width: 100%;
+  overflow: visible;
+  /* Feather all edges so the diagram floats into the background */
+  -webkit-mask-image: radial-gradient(
+    ellipse 88% 84% at 54% 50%,
+    #000 10%,
+    rgba(0, 0, 0, 0.82) 32%,
+    rgba(0, 0, 0, 0.42) 60%,
+    rgba(0, 0, 0, 0.1) 82%,
+    transparent 96%
+  );
+  mask-image: radial-gradient(
+    ellipse 88% 84% at 54% 50%,
+    #000 10%,
+    rgba(0, 0, 0, 0.82) 32%,
+    rgba(0, 0, 0, 0.42) 60%,
+    rgba(0, 0, 0, 0.1) 82%,
+    transparent 96%
+  );
+}
+
+@media (min-width: 761px) {
+  .connected-care-diagram-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+  }
+}
+
 .connected-care-diagram {
   position: relative;
   display: grid;
   min-height: 640px;
   place-items: center;
+}
+
+@media (min-width: 761px) {
+  .connected-care-diagram {
+    min-height: unset;
+    width: 760px;
+    height: 610px;
+    transform: scale(0.75);
+    transform-origin: center center;
+    flex-shrink: 0;
+    margin: 0;
+  }
 }
 
 .connected-care-halo {
@@ -386,19 +429,19 @@
 .connected-care-features {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 16px;
-  margin-top: 22px;
+  gap: var(--itera-grid-gap);
+  margin-top: 28px;
 }
 
 .connected-care-feature {
   position: relative;
-  min-height: 218px;
+  min-height: 206px;
   overflow: hidden;
-  border: 1px solid var(--cc-border);
-  border-radius: 24px;
-  padding: 18px 18px 24px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: var(--cc-shadow-soft);
+  border: 1px solid var(--itera-card-border);
+  border-radius: var(--itera-card-radius);
+  padding: 20px 20px 24px;
+  background: var(--itera-card-bg);
+  box-shadow: var(--itera-card-shadow);
 }
 
 .connected-care-feature::after {
@@ -477,11 +520,11 @@
   gap: 18px;
   align-items: center;
   margin: 18px auto 0;
-  border: 1px solid var(--cc-border);
+  border: 1px solid var(--itera-card-border);
   border-radius: 999px;
-  padding: 14px 18px;
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: var(--cc-shadow-soft);
+  padding: 14px 20px;
+  background: var(--itera-card-bg);
+  box-shadow: var(--itera-card-shadow);
 }
 
 .connected-care-footer-left {
@@ -587,13 +630,13 @@
   }
 
   .connected-care-copy { grid-area: copy; }
-  .connected-care-diagram { grid-area: diagram; min-height: 650px; }
+  .connected-care-diagram-outer { grid-area: diagram; }
   .connected-care-features { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 1060px) {
   .connected-care-section {
-    padding: 28px 18px;
+    padding: var(--itera-section-y-compact) var(--itera-page-x);
   }
 
   .connected-care-hero {
@@ -602,16 +645,12 @@
   }
 
   .connected-care-copy,
-  .connected-care-diagram {
+  .connected-care-diagram-outer {
     grid-area: auto;
   }
 
   .connected-care-copy {
     max-width: 760px;
-  }
-
-  .connected-care-diagram {
-    min-height: 660px;
   }
 
   .connected-care-features {
@@ -630,11 +669,11 @@
 
 @media (max-width: 760px) {
   .connected-care-section {
-    padding: 22px 14px 26px;
+    padding: 48px 18px;
   }
 
   .connected-care-title {
-    font-size: 46px;
+    font-size: 38px;
   }
 
   .connected-care-lede {

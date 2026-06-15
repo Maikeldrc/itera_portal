@@ -20,12 +20,12 @@ const steps = [
 
 export function AcoAccessSection() {
   return (
-    <section className="mx-auto max-w-[1320px] px-6 pb-20 lg:px-12" data-header-bg="#e8f1f2" id="platform">
-      <div className="rounded-[2rem] bg-white/30 px-5 py-12 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
+    <section className="post-section-compact" data-header-bg="#f6fbfd" id="platform">
+      <div className="post-container rounded-[var(--itera-card-radius)] bg-white/30 px-5 py-12 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
         <h2 className="heading-section-sm mx-auto max-w-[880px] text-center">
           ACOs Changed How Medicare Pays. ACCESS Changes How Care Happens.
         </h2>
-        <div className="mt-12 grid items-center gap-8 lg:grid-cols-[1fr_auto_1fr_auto_1fr]">
+        <div className="mt-12 grid items-center gap-[var(--itera-grid-gap)] lg:grid-cols-[1fr_auto_1fr_auto_1fr]">
           {steps.map(({ title, text, Icon }, index) => (
             <div className="contents" key={title}>
               <div className="flex gap-6">
