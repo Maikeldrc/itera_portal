@@ -74,6 +74,10 @@ export function ConnectedCareSection() {
     <section className="connected-care-section" data-header-bg="#f4f8fc" id="brickl">
       <div className="connected-care-wrap">
         <div className="connected-care-hero">
+          <div className="connected-care-diagram-outer">
+            <CarePlanDiagram />
+          </div>
+
           <div className="connected-care-copy">
             <h2 className="connected-care-title">
               <span>Built for connected care.</span>
@@ -94,10 +98,6 @@ export function ConnectedCareSection() {
                 Explore the platform
               </a>
             </div>
-          </div>
-
-          <div className="connected-care-diagram-outer">
-            <CarePlanDiagram />
           </div>
         </div>
 
